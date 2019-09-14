@@ -17,7 +17,7 @@ print("[######################################]")
 
 bot = telebot.TeleBot('TOKKEN') #Token bot ==============================================
 otvet = base_answer.otvet#slovar
-# user 411171602
+
 @bot.message_handler(content_types=['text'])
 def send_text(message):
     id_user = (message.from_user.id)#проверка айди
@@ -29,7 +29,7 @@ def send_text(message):
         print("[Ignore:{}]".format(id_user))
     elif id_user not in blacklist:
         #Filter sms ========================
-        fillter = (",)")
+        fillter = (",)")#фильтр символов
         for char in fillter:
             sms = sms.replace(char,"")
 
