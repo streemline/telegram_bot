@@ -45,3 +45,9 @@ def send_text(message):
                 bot.send_message(message.chat.id, "{}, {}".format(first_name,choice(otvet[key])))
 
 bot.polling()
+
+
+#----------------------------------------------------
+# Author:      0bezynka
+# Link:        https://github.com/0bezynka/telegram_bot
+#----------------------------------------------------
